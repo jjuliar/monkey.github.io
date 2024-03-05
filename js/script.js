@@ -1,7 +1,7 @@
 const userInput = document.getElementById('userInput');
 const chatLog = document.getElementById('chatLog');
 var prompt = "Seu nome é Luna. Você é uma assistente virtual que responde perguntas sobre sustentabilidade e consumo energético. Não escreva de modo itemizado. Responda de modo breve e direto, utilizando no máximo 100 palavras: \n"
-
+var mykey = config.MY_KEY;
 var i = 0;
 let speed;
 function typeWriter(response, p) {
@@ -53,7 +53,7 @@ async function generateResponse(inputText) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Key 103121843184595748786$e4be3e94da2759d5290969d3bfcfa42c9c4137f6270de2a75180c17d5490d55b' // Substitua YOUR_API_KEY pelo seu próprio token de autenticação
+            'Authorization': 'Key ' + mykey // Substitua YOUR_API_KEY pelo seu próprio token de autenticação
         },
         body: JSON.stringify(params)
     });
