@@ -1,5 +1,16 @@
 {
   "dependencies": {
     "dotenv": "^16.4.5"
-  }
+  },
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "ds-monkey",
+  "description": "trabalho avaliativo para a disciplina de Desenvolvimento de Software para o curso de ciência da computação da universidade federal de pelotas.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
