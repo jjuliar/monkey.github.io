@@ -1,7 +1,7 @@
 const userInput = document.getElementById('userInput');
 const chatLog = document.getElementById('chatLog');
 var prompt = "Seu nome é Luna. Você é uma assistente virtual que responde perguntas sobre sustentabilidade e consumo energético. Não escreva de modo itemizado. Responda de modo breve e direto, utilizando no máximo 100 palavras: \n"
-
+console.log(apiKey)
 
 var i = 0;
 let speed;
