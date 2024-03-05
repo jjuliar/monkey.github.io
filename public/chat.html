@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/white-favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
+    <title>Chat | MONKEY</title>
+</head>
+<body class="background-img" style="overflow-x: hidden;">
+    <header class="position-fixed">
+        <nav class="header navbar-wrapper">
+            <a class="title" href="./index.html">Monkey</a>
+            <a class="text-nav" href="./index.html#team-section">Sobre Nós</a></li>
+            <a class="text-nav" href="./chat.html">Converse com Luna</a>
+            <img src="./images/monkey-logo-brown.png" class="logo" title="MONKEY"/>
+        </nav>
+    </header>
+    <main>
+
+        <section class="container chat-section flex-column justify-end align-center">
+            <div class="container-chat  mb-6">
+                <div class="flex flex-column">
+                    <div class="log-container">
+                        <div id="chatLog" class="chat-log message"></div>
+                    </div>
+                    <span class="loader"></span>
+                    <div class="chat">
+                        <textarea id="userInput" class="half-width chat-input mr-1" placeholder="Digite sua mensagem..."></textarea>
+                        <button id="sendButton" class="btn-zero" onclick="sendMessage()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <img width="250" height="400" class="luna swing-animation" src="./images/macaco.png">
+    </main>
+</body>
+<script type="text/javascript" src="./js/script.js"></script>
+</html>
